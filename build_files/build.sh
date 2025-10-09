@@ -14,5 +14,7 @@ dnf5 install -y gnome-shell gnome-initial-setup gnome-terminal flatpak
 
 #ls -laR /
 
+sudo systemd-machine-id-setup
+
 flatpak remote-add --if-not-exists --system fedora oci+https://registry.fedoraproject.org
 flatpak --noninteractive --system --no-deps -y install fedora org.gnome.Calculator
