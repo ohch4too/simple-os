@@ -14,7 +14,10 @@ dnf5 install -y gnome-shell gnome-initial-setup gnome-terminal flatpak
 
 #ls -laR /
 
-dnf5 install -y dbus-x11
+dnf5 install -y dbus-daemon
+mkdir /run/dbus
+dbus-daemon --system
+
 systemd-machine-id-setup
 export DISPLAY=:0.0
 
