@@ -21,5 +21,8 @@ dbus-daemon --system
 systemd-machine-id-setup
 export DISPLAY=:0.0
 
+#flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+#flatpak --noninteractive --system --no-deps -y install fedora org.gnome.Calculator
+
 flatpak remote-add --if-not-exists --system fedora oci+https://registry.fedoraproject.org
 flatpak --noninteractive --system --no-deps -y install fedora org.gnome.Calculator
