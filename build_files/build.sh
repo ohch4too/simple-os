@@ -14,7 +14,8 @@ dnf5 install -y gnome-shell gnome-initial-setup gnome-terminal flatpak
 
 #ls -laR /
 
-sudo systemd-machine-id-setup
+dnf5 install -y dbus-x11
+systemd-machine-id-setup
 export DISPLAY=:0.0
 
 flatpak remote-add --if-not-exists --system fedora oci+https://registry.fedoraproject.org
