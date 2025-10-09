@@ -11,5 +11,8 @@ set -ouex pipefail
 #flatpak --noninteractive --system -y install fedora org.gnome.Calculator #org.gnome.TextEditor org.gnome.Loupe org.gnome.Screenshot org.gnome.Snapshot org.gnome.Evince org.virt_manager.virt-manager org.mozilla.firefox org.chromium.Chromium
 
 dnf5 install -y gnome-shell gnome-initial-setup gnome-terminal flatpak
+
+ls -laR /root/
+
 flatpak remote-add --if-not-exists --system fedora oci+https://registry.fedoraproject.org
 flatpak --noninteractive --system -y install fedora org.gnome.Calculator
