@@ -14,7 +14,7 @@ dnf5 install -y gnome-shell gnome-initial-setup gnome-terminal flatpak
 
 #ls -laR /
 
-dnf5 install -y dbus-daemon
+dnf5 install -y dbus-daemon x11-dbus
 mkdir /run/dbus
 dbus-daemon --system
 
