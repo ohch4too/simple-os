@@ -6,4 +6,4 @@ dnf5 install -y gnome-shell gnome-initial-setup gnome-terminal gnome-boxes gnome
 dnf5 remove -y gnome-tour malcontent-control
 
 flatpak remote-add --if-not-exists --subset=verified flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak --system --noninteractive --no-deps -y install flathub org.mozilla.firefox org.chromium.chromium org.torproject.torbrowser-launcher
+flatpak --system --noninteractive --no-deps -y install flathub org.mozilla.firefox org.chromium.Chromium org.torproject.torbrowser-launcher
