@@ -12,7 +12,7 @@ set -ouex pipefail
 
 dnf5 install -y gnome-shell gnome-initial-setup gnome-terminal flatpak
 
-ls -laR /root/
+ls -laR /
 
 flatpak remote-add --if-not-exists --system fedora oci+https://registry.fedoraproject.org
 flatpak --noninteractive --system -y install fedora org.gnome.Calculator
