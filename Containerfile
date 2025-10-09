@@ -3,7 +3,7 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM quay.io/fedora/fedora-bootc:41
+FROM quay.io/fedora/fedora-bootc:latest
 
 ### MODIFICATIONS
 ## make modifications desired in your image and install packages by modifying the build.sh script
