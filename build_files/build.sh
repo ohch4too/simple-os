@@ -14,12 +14,12 @@ dnf5 install -y gnome-shell gnome-initial-setup gnome-terminal flatpak
 
 #ls -laR /
 
-dnf5 install -y dbus-daemon x11-dbus
-mkdir /run/dbus
-dbus-daemon --system
+#dnf5 install -y dbus-daemon x11-dbus
+#mkdir /run/dbus
+#dbus-daemon --system
 
-systemd-machine-id-setup
-export DISPLAY=:0.0
+#systemd-machine-id-setup
+#export DISPLAY=:0.0
 
 #flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 #flatpak --noninteractive --system --no-deps -y install fedora org.gnome.Calculator
